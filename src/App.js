@@ -1,25 +1,25 @@
 import './App.css';
 
-function Header() {
+function Header(props) {
     return (
         <div className="header">
-            <h1>Dark Studio</h1>
+            <h1>{props.company_name}</h1>
         </div>
     );
 }
 
-function Body() {
+function Body(props) {
     return (
         <section>
-            <p>Whatever you want for your appearance</p>
+            <p>Whatever you want for your appearance, {props.name}</p>
         </section>
     );
 }
 
-function Footer() {
+function Footer(props) {
     return (
         <section>
-            <p>Access <a href="https://www.darkstudio.com">https://www.darkstudio.com</a></p>
+            <p>Access <a href="https://www.darkstudio.com">https://www.darkstudio.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
         </section>
     );
 }
@@ -27,9 +27,9 @@ function Footer() {
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Body/>
-            <Footer/>
+            <Header company_name = "Dark Studio"/>
+            <Body name = "Bitch"/>
+            <Footer author = "poisonshade"/>
         </div>
     );
 }
