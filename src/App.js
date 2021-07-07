@@ -1,5 +1,11 @@
 import './App.css';
 
+let dishes = [
+    "Spaghetti with cheese",
+    "Tomatoes with salt",
+    "Cabbage with nothing"
+];
+
 function Header(props) {
     return (
         <div className="header">
@@ -11,7 +17,12 @@ function Header(props) {
 function Body(props) {
     return (
         <section>
-            <p>Whatever you want for your appearance, {props.name}</p>
+            <p>Whatever you want for your stomach, {props.name}</p>
+            <ul style={{textDecoration: "none"}}>
+                {props.dishes.map((dish) => (
+                    <li>{dish}</li>
+                ))}
+            </ul>
         </section>
     );
 }
@@ -28,7 +39,7 @@ function App() {
     return (
         <div className="App">
             <Header company_name = "Dark Studio"/>
-            <Body name = "Bitch"/>
+            <Body name = "Bitch" dishes = {dishes}/>
             <Footer author = "poisonshade"/>
         </div>
     );
