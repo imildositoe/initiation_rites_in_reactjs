@@ -1,0 +1,1 @@
+1. component is a function that returns an UI;
