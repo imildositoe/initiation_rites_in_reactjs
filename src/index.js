@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 ReactDOM.render(
-    React.createElement(
-        "h1",
-        {style: {color: "blue"}},
-        "Hello World!"
-    ), //what we want to create
-    document.getElementById('root') // where we want to create
+    <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+    </ul>,
+    document.getElementById('root')
 );
