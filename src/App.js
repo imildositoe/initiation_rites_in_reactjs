@@ -30,7 +30,7 @@ function Body(props) {
 function Footer(props) {
     return (
         <section>
-            <p>Access <a href="https://www.darkstudio.com">https://www.darkstudio.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
+            <p>Access <a href="https://www.perfectfood.com">https://www.darkstudio.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
         </section>
     );
 }
