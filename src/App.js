@@ -35,14 +35,14 @@ function Footer(props) {
     );
 }
 
-function Table() {
+function Table(props) {
     return (
         <table>
             <thead>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Nr</td>
+                    <td>Type of food</td>
+                    <td>Rating</td>
                 </tr>
             </thead>
             <tbody>
