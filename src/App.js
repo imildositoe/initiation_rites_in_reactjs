@@ -23,6 +23,8 @@ function Body(props) {
                     <li>{dish}</li>
                 ))}
             </ul>
+
+            <Table/>
         </section>
     );
 }
