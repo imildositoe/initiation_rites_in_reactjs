@@ -30,16 +30,26 @@ function Body(props) {
 function Footer(props) {
     return (
         <section>
-            <p>Access <a href="https://www.perfectfood.com">https://www.darkstudio.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
+            <p>Access <a href="https://www.perfectfood.com">https://www.perfectfood.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
         </section>
+    );
+}
+
+function Table() {
+    return (
+        <table>
+            <thead>
+                <th></th>
+            </thead>
+        </table>
     );
 }
 
 function App() {
     return (
         <div className="App">
-            <Header company_name = "Dark Studio"/>
-            <Body name = "Bitch" dishes = {dishes}/>
+            <Header company_name = "Perfect Food"/>
+            <Body name = "Perfect" dishes = {dishes}/>
             <Footer author = "poisonshade"/>
         </div>
     );
