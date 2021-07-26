@@ -6,6 +6,8 @@ let dishes = [
     "Cabbage with nothing"
 ];
 
+const dishesObjects = dishes.map((dish, i) => ({id: i, title: dish}))
+
 function Header(props) {
     return (
         <div className="header">
@@ -20,7 +22,7 @@ function Body(props) {
             <p>Whatever you want for your stomach, {props.name}</p>
             <ul style={{textDecoration: "none"}}>
                 {props.dishes.map((dish) => (
-                    <li>{dish}</li>
+                    <li key={dish.id}>{dish.title}</li>
                 ))}
             </ul>
 
@@ -62,7 +64,7 @@ function App() {
     return (
         <div className="App">
             <Header company_name = "Perfect Food"/>
-            <Body name = "Perfect" dishes = {dishes}/>
+            <Body name = "Perfect" dishes = {dishesObjects}/>
             <Footer author = "poisonshade"/>
         </div>
     );
