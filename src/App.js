@@ -1,4 +1,5 @@
 import './App.css';
+import restaurant from './restaurant.jpg'
 
 let dishes = [
     "Spaghetti with cheese",
@@ -20,6 +21,7 @@ function Body(props) {
     return (
         <section>
             <p>Whatever you want for your stomach, {props.name}</p>
+            <img src={restaurant} alt="profile" height={200}/>
             <ul style={{textDecoration: "none"}}>
                 {props.dishes.map((dish) => (
                     <li key={dish.id}>{dish.title}</li>
@@ -39,14 +41,14 @@ function Footer(props) {
     );
 }
 
-function Table(props) {
+function Table() {
     return (
         <table>
             <thead>
                 <tr>
-                    <td>Nr</td>
-                    <td>Type of food</td>
-                    <td>Rating</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </thead>
             <tbody>
