@@ -41,26 +41,26 @@ function Footer(props) {
     );
 }
 
-function Table() {
-    return (
-        <table>
-            <thead>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    );
-}
+// function Table() {
+//     return (
+//         <table>
+//             <thead>
+//                 <tr>
+//                     <td></td>
+//                     <td></td>
+//                     <td></td>
+//                 </tr>
+//             </thead>
+//             <tbody>
+//                 <tr>
+//                     <td></td>
+//                     <td></td>
+//                     <td></td>
+//                 </tr>
+//             </tbody>
+//         </table>
+//     );
+// }
 
 function App() {
     return (
