@@ -35,9 +35,9 @@ function Body(props) {
 
 function Footer(props) {
     return (
-        <section>
-            <p>Access <a href="https://www.perfectfood.com">https://www.perfectfood.com || {props.author + ' ' + new Date().getFullYear()}</a></p>
-        </section>
+        <>
+            <p>Access <a href="https://www.perfectfood.com">https://www.perfectfood.com || {props.name + ' ' + new Date().getFullYear()}</a></p>
+        </>
     );
 }
 
@@ -67,7 +67,7 @@ function App() {
         <div className="App">
             <Header company_name = "Perfect Food"/>
             <Body name = "Perfect" dishes = {dishesObjects}/>
-            <Footer author = "poisonshade"/>
+            <Footer name = "Perfect Food"/>
         </div>
     );
 }
