@@ -19,7 +19,7 @@ function Header(props) {
 
 function Body(props) {
     return (
-        <section>
+        <>
             <p>Whatever you want for your stomach, {props.name}</p>
             <img src={restaurant} alt="profile" height={200}/>
             <ul style={{textDecoration: "none"}}>
@@ -29,7 +29,7 @@ function Body(props) {
             </ul>
 
             <Table/>
-        </section>
+        </>
     );
 }
 
