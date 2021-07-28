@@ -27,8 +27,6 @@ function Body(props) {
                     <li key={dish.id}>{dish.title}</li>
                 ))}
             </ul>
-
-            <Table/>
         </>
     );
 }
@@ -36,7 +34,8 @@ function Body(props) {
 function Footer(props) {
     return (
         <>
-            <p>Access <a href="https://www.perfectfood.com">https://www.perfectfood.com || {props.name + ' ' + new Date().getFullYear()}</a></p>
+            <p>Access <a href="https://www.perfectfood.com">https://www.perfectfood.com
+                || {props.name + ' ' + new Date().getFullYear()}</a></p>
         </>
     );
 }
@@ -44,9 +43,9 @@ function Footer(props) {
 function App() {
     return (
         <div className="App">
-            <Header company_name = "Perfect Food"/>
-            <Body name = "Perfect" dishes = {dishesObjects}/>
-            <Footer name = "Perfect Food"/>
+            <Header company_name="Perfect Food"/>
+            <Body name="Perfect" dishes={dishesObjects}/>
+            <Footer name="Perfect Food"/>
         </div>
     );
 }
