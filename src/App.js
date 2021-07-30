@@ -20,6 +20,11 @@ function Header(props) {
 function Menu(props) {
     return (
         <div className="menu">
+            <ul>
+                <li>Home</li>
+                <li>Food</li>
+                <li>About us</li>
+            </ul>
         </div>
     );
 }
