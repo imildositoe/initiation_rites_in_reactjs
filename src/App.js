@@ -17,6 +17,13 @@ function Header(props) {
     );
 }
 
+function Menu(props) {
+    return (
+        <div className="menu">
+        </div>
+    );
+}
+
 function Body(props) {
     return (
         <>
