@@ -22,6 +22,7 @@ function Menu(props) {
         <div className="menu">
             <ul>
                 <li>Home</li>
+                <li>Today</li>
                 <li>Food</li>
                 <li>About us</li>
             </ul>
@@ -56,6 +57,7 @@ function App() {
     return (
         <div className="App">
             <Header company_name="Perfect Food"/>
+            <Menu/>
             <Body name="Perfect" dishes={dishesObjects}/>
             <Footer name="Perfect Food"/>
         </div>
