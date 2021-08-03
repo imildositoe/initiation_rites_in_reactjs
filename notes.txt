@@ -1,3 +1,7 @@
 1. component is a function that returns an UI;
+
 2. components can be inserted one inside each other;
+
 3. fragments in React.js can be created using <React.Fragment> or simple </>
+
+4.
